@@ -1,7 +1,7 @@
 import {Request, Response, Router} from "express";
 import GetUsersAreaNotesController from "./GetUsersAreaNotesController";
 import GetUsersAreaNotesHandler from "../../Application/GetUsersAreaNotes/GetUsersAreaNotesHandler";
-import LocalUsersAreaNotesClient from "../LocalUsersAreaNotesClient";
+import LocalUsersAreaNotesClient from "../NotesClient/LocalUsersAreaNotesClient";
 import NotesApi from "../../../Notes/Infrastructure/Api/NotesApi";
 
 export class UsersAreaRoutes {

@@ -1,7 +1,6 @@
-import UsersAreaNotesClient from "../Application/UsersAreaNotesClient";
-import NotesApi from "../../Notes/Infrastructure/Api/NotesApi";
-import PartnerAreaNoteDTO from "../../PartnerArea/Application/PartnerAreaNoteDTO";
-import UsersAreaNoteDTO from "../Application/UsersAreaNoteDTO";
+import UsersAreaNotesClient from "../../Application/UsersAreaNotesClient";
+import NotesApi from "../../../Notes/Infrastructure/Api/NotesApi";
+import UsersAreaNoteDTO from "../../Application/UsersAreaNoteDTO";
 
 export default class LocalUsersAreaNotesClient implements UsersAreaNotesClient {
   constructor(private api: NotesApi) {

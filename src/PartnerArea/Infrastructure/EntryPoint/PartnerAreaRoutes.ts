@@ -1,7 +1,7 @@
 import {Request, Response, Router} from "express";
 import GetPartnerAreaNotesController from "./GetPartnerAreaNotesController";
 import GetPartnerAreaNotesHandler from "../../Application/GetPartnerAreaNotes/GetPartnerAreaNotesHandler";
-import {LocalPartnerAreaNotesClient} from "../LocalPartnerAreaNotesClient";
+import {LocalPartnerAreaNotesClient} from "../NotesClient/LocalPartnerAreaNotesClient";
 import NotesApi from "../../../Notes/Infrastructure/Api/NotesApi";
 
 export default class PartnerAreaRoutes {
