@@ -11,8 +11,8 @@ De ese modo, tendremos un contexto para los usuarios tipo colaborador y otro par
 ## Módulos
 
 - Notas
-- Área de colaboradores
-- Área de usuarios
+- Área de colaboradores: pueden ver sólo las notas públicas y no pueden cerrarlas
+- Área de usuarios: pueden ver todas las notas y cerrarlas
 
 ## Puesta en marcha
 
@@ -31,5 +31,6 @@ npm test
 ## Endpoints
 
 - /partner-area/notes: debe devolver únicamente las notas públicas
+- /partner-area/notes/1: debe devolver error 401
 - /users-area/notes: debe devolver todas las notas
-
+- /users-area/notes/1: debe devolver status 200
