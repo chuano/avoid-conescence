@@ -1,5 +1,5 @@
 import UsersAreaNotesClient from "../Application/UsersAreaNotesClient";
-import NotesApi from "../../Notes/Infrastructure/NotesApi";
+import NotesApi from "../../Notes/Infrastructure/Api/NotesApi";
 import PartnerAreaNoteDTO from "../../PartnerArea/Application/PartnerAreaNoteDTO";
 import UsersAreaNoteDTO from "../Application/UsersAreaNoteDTO";
 

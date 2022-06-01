@@ -1,7 +1,7 @@
-import GetNotesQuery from "../Application/GetNotes/GetNotesQuery";
-import GetNotesHandler from "../Application/GetNotes/GetNotesHandler";
+import GetNotesQuery from "../../Application/GetNotes/GetNotesQuery";
+import GetNotesHandler from "../../Application/GetNotes/GetNotesHandler";
 import NoteDTO from "./NoteDTO";
-import InMemoryNotesCriteriaQuery from "./InMemoryNotesCriteriaQuery";
+import InMemoryNotesCriteriaQuery from "../Persistence/InMemoryNotesCriteriaQuery";
 
 export default class NotesApi {
   async getNotes(onlyPublic: boolean): Promise<NoteDTO[]> {

@@ -1,5 +1,5 @@
-import NotesCriteriaQuery from "../Domain/NotesCriteriaQuery";
-import Note from "../Domain/Note";
+import NotesCriteriaQuery from "../../Domain/NotesCriteriaQuery";
+import Note from "../../Domain/Note";
 
 export default class InMemoryNotesCriteriaQuery implements NotesCriteriaQuery {
   private notes = [
