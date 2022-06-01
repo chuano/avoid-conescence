@@ -11,4 +11,8 @@ export default class LocalUsersAreaNotesClient implements UsersAreaNotesClient {
 
     return notes.map((n) => new UsersAreaNoteDTO(n.id, n.text, n.isPrivate, n.isOpen));
   }
+
+  async closeNote(id: string): Promise<void> {
+    await this.api.closeNote(id);
+  }
 }

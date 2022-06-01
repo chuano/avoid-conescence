@@ -1,9 +1,9 @@
 import GetNotesQuery from "./GetNotesQuery";
 import Note from "../../Domain/Note";
-import NotesCriteriaQuery from "../../Domain/NotesCriteriaQuery";
+import NoteRepository from "../../Domain/NoteRepository";
 
 export default class GetNotesHandler {
-  constructor(private criteriaQuery: NotesCriteriaQuery) {
+  constructor(private criteriaQuery: NoteRepository) {
   }
 
   async handle(query: GetNotesQuery): Promise<Note[]> {
