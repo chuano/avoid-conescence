@@ -3,6 +3,7 @@ export default class Note {
     readonly id: string,
     readonly text: string,
     readonly isPrivate: boolean,
+    readonly isOpen: boolean
   ) {
   }
 }

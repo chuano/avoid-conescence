@@ -9,6 +9,6 @@ export default class NotesApi {
     const query = new GetNotesQuery(onlyPublic);
     const notes = await handler.handle(query);
 
-    return notes.map((n) => new NoteDTO(n.id, n.text, n.isPrivate));
+    return notes.map((n) => new NoteDTO(n.id, n.text, n.isPrivate, n.isOpen));
   }
 }

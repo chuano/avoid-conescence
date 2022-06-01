@@ -9,6 +9,6 @@ export default class LocalUsersAreaNotesClient implements UsersAreaNotesClient {
   async getNotes(): Promise<UsersAreaNoteDTO[]> {
     const notes = await this.api.getNotes(false);
 
-    return notes.map((n) => new UsersAreaNoteDTO(n.id, n.text, n.isPrivate));
+    return notes.map((n) => new UsersAreaNoteDTO(n.id, n.text, n.isPrivate, n.isOpen));
   }
 }
