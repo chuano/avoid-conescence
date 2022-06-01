@@ -16,16 +16,30 @@ De ese modo, tendremos un contexto para los usuarios tipo colaborador y otro par
 
 ## Puesta en marcha
 
-Necesitarás nodejs instalado en tu sistema.
+El servidor web corre en el puerto 3000.
 
+### Node local
 ```bash
 npm install
 npm start
 ```
 
+### Docker
+```bash
+docker-compose up -d
+```
+
 ## Tests
+
+### Node local
 ```bash
 npm test
+```
+
+### Docker
+```bash
+docker-compose up -d
+docker-compose exec nodeapp npm test
 ```
 
 ## Endpoints
