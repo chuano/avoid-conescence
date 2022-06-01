@@ -3,7 +3,15 @@ export default class Note {
     readonly id: string,
     readonly text: string,
     readonly isPrivate: boolean,
-    readonly isOpen: boolean
+    private _isOpen: boolean
   ) {
+  }
+
+  close(): void {
+    this._isOpen = false;
+  }
+
+  get isOpen(): boolean {
+    return this._isOpen;
   }
 }
