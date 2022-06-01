@@ -30,7 +30,7 @@ npm test
 
 ## Endpoints
 
-- /partner-area/notes: debe devolver únicamente las notas públicas
-- /partner-area/notes/1: debe devolver error 401
-- /users-area/notes: debe devolver todas las notas
-- /users-area/notes/1: debe devolver status 200
+- GET /partner-area/notes: debe devolver únicamente las notas públicas
+- PUT /partner-area/notes/1: debe devolver error 401
+- GET /users-area/notes: debe devolver todas las notas
+- PUT /users-area/notes/1: debe devolver status 200
